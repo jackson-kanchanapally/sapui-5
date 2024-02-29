@@ -21,7 +21,10 @@ controllerName="ui5.walkthrough.controller.InvoiceList"
                 }
             }"
             numberUnit="{view>/currency}"
+            
+            numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"/>
             />
+            
       </items>
    </List>
 </mvc:View>
