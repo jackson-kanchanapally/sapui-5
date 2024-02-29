@@ -1,0 +1,14 @@
+/* For right-to-left (rtl) languages, like Arabic, you set the left margin and reset the right margin as the app display is inverted. If you only use standard SAPUI5 controls, you don't need to care about this, in this case where we use custom CSS, you have to add this information. */
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+    margin-right: 0.125rem
+ }
+ 
+ html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+    margin-left: 0.125rem
+ }
+ 
+ .myAppDemoWT .myCustomText {
+    display: inline-block;
+    font-weight: bold;
+ }
+ 
