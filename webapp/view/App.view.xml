@@ -8,4 +8,11 @@
    <Button
       text="Say Hi"
       press=".onShowHi"/>
+
+    <Input
+    value="{/recipient/name}"
+    description="Hey Hi {/recipent/name}"
+    valueLiveUpdate="true"
+    width="60%"
+    />
 </mvc:View>
